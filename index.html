@@ -1,0 +1,70 @@
+<html>
+<head>
+  <title>Page d'authentification</title>
+  <style>
+    /* Définition du style du cadre */
+    .cadre {
+      width: 400px;
+      margin: 0 auto;
+      border: 2px solid black;
+      padding: 20px;
+      background-color: lightblue;
+      text-align: center; /* Ajout de cette propriété */
+    }
+
+    /* Définition du style du formulaire */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Définition du style des champs de saisie */
+    input[type="text"], input[type="password"] {
+      width: 300px;
+      margin: 10px;
+      padding: 5px;
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
+
+    /* Définition du style du bouton */
+    input[type="submit"] {
+      width: 200px;
+      margin: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      background-color: green;
+      color: white;
+      font-weight: bold;
+    }
+
+    .reset-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    #reset {
+      border-radius: 10px;
+      background-color: rgb(128, 0, 0);
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="cadre">
+    <h1>Page d'authentification</h1>
+    <form action="login.php" method="post">
+      <input type="text" name="email" placeholder="Entrez votre nom" required>
+      <input type="text" name="password" placeholder="Entrez votre mot de passe" required>
+      <input type="submit" value="Se connecter">
+    </form>
+  </div>
+  <a href="reset.php" class="reset-button">
+  <button id="reset">Reset</button>
+</a>
+</body>
+</html>

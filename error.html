@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>Page d'erreur</title>
+  <style>
+    /* Définition du style du cadre */
+    .cadre {
+      width: 400px;
+      margin: 0 auto;
+      border: 2px solid black;
+      padding: 20px;
+      background-color: lightblue;
+      text-align: center;
+    }
+
+    /* Définition du style du bouton */
+    input[type="submit"] {
+      width: 200px;
+      margin: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      background-color: blue;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Définition du style du message d'erreur */
+    .erreur {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="cadre">
+    <h1>Page d'erreur</h1>
+    <p class="erreur">Email ou mot de passe incorrect.</p>
+    <form action="index.html" method="get">
+      <input type="submit" value="Retour a l'accueil">
+    </form>
+  </div>
+</body>
+</html>
